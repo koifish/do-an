@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</head> 
+<body> 
+	<div data-role="page" id="three" class="container">
+		<br>
+		<div class="row">
+			<div id="trai" class="col-sm-8">
+				<!-- Bat dau update -->
+				<div class="container">
+					<div class="row">
+						<div  class="col-sm-5">
+							<table class="table table-bordered" id="de">
+								<tbody><tr id="dongde">
+									<th style="width: 100px;">Từ khóa: </th>
+								</tr></tbody>
+							</table>
+						</div>
+
+						<div class="col-sm-1" style="background-color:red;">
+							<h4 class="text-right" id="thoigian">0:00</h4>
+						</div>
+					</div>
+
+					<div class="row">
+						<div  class="col-sm-8">
+							<div id="board" class="table-responsive"></div>			
+						</div>
+					</div>
+				</div>
+				<!-- Ket thuc update -->
+			</div>
+
+			<div id="phai" class="col-sm-4">
+				<div class="container">
+					<br>
+					<div class="row">
+						<h4 class="col-sm-1">Bàn: #3</h4>
+						<h4 class="col-sm-2">Lượt: 5</h4>
+						<button type="button" class="btn btn-default col-sm-1"><span class="glyphicon glyphicon-remove-circle"></span></button>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm-2">
+							<div style="color: white; background-color: black;">#1</div>
+							<button type="button" class="btn btn-default btn-block btn-lg">Player1</button>
+						</div>
+
+						<div class="col-sm-2">
+							<div style="color: white; background-color: black;">#2</div>
+							<button type="button" class="btn btn-default btn-block btn-lg">-</button>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#chat" onclick="chat()">nói</a></li>
+								<li><a data-toggle="tab" href="#dsnguoichoi" onclick="danhsach()">ai trong</a></li>
+							</ul>
+
+							<div class="tab-content">
+							 	<div id="chat" class="tab-pane fade in active">
+									<ul class="list-group">
+										<li class="list-group-item">First item</li>
+										<li class="list-group-item">Second item</li>
+										<li class="list-group-item">Third item</li>
+									</ul>
+								</div>
+								<div id="dsnguoichoi" class="tab-pane fade">
+								    <ul class="list-group">
+										<li class="list-group-item">1 item</li>
+										<li class="list-group-item">2 item</li>
+										<li class="list-group-item">3 item</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" id="chat-input">
+						<div class="form-group col-sm-4">
+							<input type="text" class="form-control" id="nhap">
+						</div>
+					</div>
+
+					<div class="row" id="ds-input" hidden>
+						<div class="container">
+							<button type="button" class="btn btn-primary">mời bạn chơi</button>
+							<button type="button" class="btn btn-danger">đuổi ra</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

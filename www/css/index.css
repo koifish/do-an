@@ -1,0 +1,21 @@
+#board{
+    width: 600px;
+}
+
+.trang{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-color: #FFB7C5;
+}
+
+.den{
+    background-color: #FFB7C5;
+    width: 60px;
+    height: 60px;
+}
+
+.ode{
+    background-color: #FFB7C5;
+    height: 40px;
+}
